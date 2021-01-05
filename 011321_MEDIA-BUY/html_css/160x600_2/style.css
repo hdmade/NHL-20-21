@@ -69,38 +69,12 @@ body{
 	top: 0px;
 	width: 160px;
 	height: 600px;
-	background: url(images/bg_simple.jpg) no-repeat;
+	background: url(images/bg_endframe.jpg) no-repeat;
 }
 
-#player1{
-	position: absolute;
-	
-	left: 0px;
-	top: 0px;
-	width: 160px;
-	height: 600px;
-	background: url(images/players1.png) no-repeat;
-}
 
-#player2{
-	position: absolute;
-	
-	left: 0px;
-	top: 0px;
-	width: 160px;
-	height: 600px;
-	background: url(images/players2.png) no-repeat;
-}
 
-#player3{
-	position: absolute;
-	
-	left: 0px;
-	top: 0px;
-	width: 160px;
-	height: 600px;
-	background: url(images/players3.png) no-repeat;
-}
+
 
 
 

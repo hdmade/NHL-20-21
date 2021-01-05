@@ -42,13 +42,10 @@
 <!--        <div id="logoendframe"></div>
  -->        
         
-        <div id="logolarge"></div>
+<div id="logolarge"></div>
         <div id="match1"></div>
+        
         <div id="match2"></div>
-
-        <div id="player3"></div>
-        <div id="player2"></div>
-        <div id="player1"></div>
         
         
 
@@ -85,10 +82,6 @@
             
             $match1 = $("#match1"),
             $match2 = $("#match2"),
-
-            $player1 = $("#player1"),
-            $player2 = $("#player2"),
-            $player3 = $("#player3"),
             
             $players = $("#players"),
 
@@ -125,15 +118,10 @@
           .to($logolarge, 0.8, {top:-165, ease: Power2.easeOut}, "endframe")
           .to($tagline1, 0.5, {opacity:0, ease: Power1.easeOut}, "endframe")
           .from($bgendframe, 0.8, {opacity:0}, "endframe")
-
-
-          .from($player1, 0.6, {opacity:0, top:20, ease: Power1.easeOut}, "endframe+=.5")
-          .from($player2, 0.6, {opacity:0, top:20, ease: Power1.easeOut}, "endframe+=.7")
-          .from($player3, 0.6, {opacity:0, top:20, ease: Power1.easeOut}, "endframe+=.9")
           
 
-          .from($match1, .6, {opacity:0, scale:1.3, ease: Power1.easeIn}, "endframe+=1.2")
-          .from($match2, .6, {opacity:0, ease: Power1.easeOut}, "endframe+=1.9")
+          .from($match1, .5, {opacity:0, scale:1.3, ease: Power1.easeIn}, "endframe+=.8")
+          .from($match2, .5, {opacity:0, top:-20, ease: Power1.easeOut}, "endframe+=1.5")
           
           // pause on endframe
           .add(function(){}, "+=4");
