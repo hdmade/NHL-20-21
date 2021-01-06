@@ -117,7 +117,7 @@ body{
 #match1{
 	position: absolute;
 	left: 0px;
-	top: 0px;
+	top: 20px;
 	width: 300px;
 	height: 250px;
 	background: url(images/hockeyisback.png) no-repeat;	

@@ -117,7 +117,7 @@ body{
 #match1{
 	position: absolute;
 	left: 4px;
-	top: -8px;
+	top: 6px;
 	width: 728px;
 	height: 90px;
 	background: url(images/hockeyisback.png) no-repeat;	
@@ -129,7 +129,7 @@ body{
 #match2{
 	position: absolute;
 	left: 0px;
-	top: -2px;
+	top: 13px;
 	width: 728px;
 	height: 90px;
 	background: url(images/watch-now-nbcsn.png) no-repeat;	
