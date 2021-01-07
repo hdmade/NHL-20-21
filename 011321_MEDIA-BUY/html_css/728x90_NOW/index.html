@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>NHL | 728x90</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <meta name="ad.size" content="width=160, height=600">
+    <script type="text/javascript">var clickTag = "https://www.google.com";</script>
+
+</head>
+<body>
+
+    <div id="banner" onclick="javascript:window.open(window.clickTag);">
+
+      <div id="animation">
+
+<!-- Frame 1 -->
+        <div id="frame1bg"></div>
+        
+<!-- Frame 2 -->        
+
+        <div id="frame2bg"></div>
+
+        
+
+
+<!-- Frame 3 -->        
+       <!--  <div id="mask1">
+          <div id="tagline1"></div>
+        </div> -->
+        
+        <!-- <div id="mask2">
+          <div id="tagline2"></div>
+        </div> -->
+<!-- Endframe -->
+        <div id="bgendframe"></div>
+<!--         <div id="players"></div>
+ -->
+<!--        <div id="divider"></div> -->
+<!--        <div id="logoendframe"></div>
+ -->        
+        
+        
+        <div id="match1"></div>
+        <div id="match2"></div>
+
+        <div id="player3"></div>
+        <div id="player2"></div>
+        <div id="player1"></div>
+        <div id="logolarge"></div>
+        
+        
+
+        
+
+      </div>        
+    </div>
+
+    <!-- Load TweenMax here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>             
+    <script>
+    $(document).ready(function(){
+        var $animation = $("#animation"),
+
+            $logolarge = $("#logolarge"),
+            
+            $mask1 = $("#mask1"),
+            $mask2 = $("#mask2"),
+
+
+            $tagline1 = $("#tagline1"),
+            $tagline2 = $("#tagline2"),
+
+            $frame1bg = $("#frame1bg"),
+            $frame2bg = $("#frame2bg"),
+            
+            $bgendframe = $("#bgendframe"),
+            $bgendframe1 = $("#bgendframe1"),
+            $divider = $("#divider"),
+            $playerid = $("#playerid"),
+            $logoendframe = $("#logoendframe"),
+            
+            $match1 = $("#match1"),
+            $match2 = $("#match2"),
+
+            $player1 = $("#player1"),
+            $player2 = $("#player2"),
+            $player3 = $("#player3"),
+            
+            $players = $("#players"),
+
+            
+            tl;
+
+        tl = new TimelineMax({repeat:1, repeatDelay:2});
+
+        tl.add("start")
+          .from($animation, 0.3, {autoAlpha:0}, "start+=0.5")
+          .from($logolarge, .5, {opacity:0, scale:1.5, ease: Power2.easeIn}, "start+=1")
+          .from($frame2bg, 1.5, {opacity:0}, "start+=1")
+          
+          
+          // frame 2
+          .add("frame2", "+=0.5")
+          
+          
+          
+      
+          // .from($frame2bg, 0.5, {opacity:0}, "frame2")
+          
+          // .from($tagline1, 0.5, {xPercent:100, ease: Power1.easeOut}, "frame2+=0.5")
+          // .fromTo($meteors, 1.5, {top:-250, left:250}, {top:500, left:-500}, "frame2+=0.8")
+
+          // frame 3
+          // .add("frame3", "+=0.5")
+          // .to($tagline1, 0.5, {opacity:0, ease: Power1.easeOut}, "frame3")
+          // .from($tagline2, 0.5, {xPercent:100, ease: Power1.easeOut}, "frame3+=0.5")
+          // .fromTo($meteors, 1.5, {top:-250, left:250}, {top:500, left:-500}, "frame3+=1.0")
+
+          // endframe
+          .add("endframe", "+=0.3")
+          .to($logolarge, 0.8, {left:-119, ease: Power2.easeOut}, "endframe")
+          .to($tagline1, 0.5, {opacity:0, ease: Power1.easeOut}, "endframe")
+          .from($bgendframe, 0.8, {opacity:0}, "endframe")
+
+
+          .from($player1, 0.6, {opacity:0, top:20, ease: Power1.easeOut}, "endframe+=.5")
+          .from($player2, 0.6, {opacity:0, top:20, ease: Power1.easeOut}, "endframe+=.7")
+          .from($player3, 0.6, {opacity:0, top:20, ease: Power1.easeOut}, "endframe+=.9")
+          
+
+          .from($match1, .6, {opacity:0, scale:1.3, ease: Power1.easeIn}, "endframe+=1.2")
+          .from($match2, .6, {opacity:0, ease: Power1.easeOut}, "endframe+=1.9")
+          
+          // pause on endframe
+          .add(function(){}, "+=4");
+
+          // long animations
+          // .to($frame1bg, 3, {y:-100}, "start")
+          // .to($frame2bg, 6, {y:-100, ease: Power0.easeNone}, "frame2");
+
+        tl.totalDuration(15);
+
+
+    
+    });
+    </script>
+    
+
+</body>
+</html>
+
